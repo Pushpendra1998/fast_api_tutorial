@@ -1,24 +1,41 @@
-# 1. Installation
-Create a new folder for the project.
+# 2. First Step.
 
-Create a virtual environment.
-
+Create a new folder for FastAPI app.
 ```bash
-python3 -m venv /path/to/new/virtual/environment
+mkdir <Your APP Name>
 ```
 
-Activate the virtual environment.
+Create main.py file inside you app.
+
+This is the simple API code.
+```python
+from fastapi import FastAPI #FastAPI Module.
+
+app = FastAPI() # app is the instance of FastAPI Class.
+
+
+@app.get("/") # Root endpoint of the app.
+async def root():
+    return {"message": "Hello World"}
+```
+Paste the above code to main.py
+
+Run live server using
 ```bash
-source <venv>/bin/activate
+uvicorn <app_name>.<main_file_name>:<fastAPI_instance> --reload
+```
+e.g.
+```bash
+uvicorn app.main:app --reload
 ```
 
-Install FastAPI using pip.
+Open your browser with http://localhost:8000 address.
 
-```bash
-pip install fastapi
+It will show 
+```json 
+{"message":"Hello World"}
 ```
 
-Install ASGI (Asynchronous Server Gateway Interface) server.
-```bash
-pip install "uvicorn[standard]"
-```
+## FastAPI Swagger
+Access swagger using http://localhost:8000/docs
+![Alt text](/fast_api_tutorial/img/swagger.png)
