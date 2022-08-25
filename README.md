@@ -29,7 +29,7 @@ e.g.
 uvicorn app.main:app --reload
 ```
 
-Open your browser with http://localhost:8000 address.
+Open your browser with [http://localhost:8000](http://localhost:8000){:target="_blank"} address.
 
 It will show 
 ```json 
