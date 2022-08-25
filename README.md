@@ -4,6 +4,10 @@ Create a new folder for FastAPI app.
 ```bash
 mkdir <Your APP Name>
 ```
+e.g.
+```bash
+mkdir app
+```
 
 Create main.py file inside you app.
 
