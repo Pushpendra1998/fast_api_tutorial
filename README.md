@@ -1,4 +1,4 @@
-# Installation
+# 1. Installation
 Create a new folder for the project.
 
 Create a virtual environment.
