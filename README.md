@@ -38,4 +38,4 @@ It will show
 
 ## FastAPI Swagger
 Access swagger using http://localhost:8000/docs
-![Alt text](/img/swagger.png)
+![Alt text](./img/swagger.png)
