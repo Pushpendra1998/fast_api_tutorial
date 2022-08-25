@@ -29,7 +29,7 @@ e.g.
 uvicorn app.main:app --reload
 ```
 
-Open your browser with [http://localhost:8000](http://localhost:8000){:target="_blank"} address.
+Open your browser with http://localhost:8000 address.
 
 It will show 
 ```json 
@@ -38,4 +38,4 @@ It will show
 
 ## FastAPI Swagger
 Access swagger using http://localhost:8000/docs
-![Alt text](/fast_api_tutorial/img/swagger.png)
+![Alt text](/img/swagger.png)
