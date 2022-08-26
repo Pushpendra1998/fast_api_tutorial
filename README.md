@@ -49,7 +49,8 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-@app.get("/users/me") # This route should be on the top so it me doesn't count as user_id as path parameter.
+@app.get("/users/me") # This route should be on the top so it 
+# `me` doesn't count as `user_id` as path parameter.
 async def read_user_me():
     return {"user_id": "the current user"}
 
@@ -78,7 +79,9 @@ app = FastAPI()
 
 
 @app.get("/models/{model_name}")
-async def get_model(model_name: ModelName): # model_name will only accept alexnet, resnet, lenet as path parameter.
+async def get_model(model_name: ModelName): 
+    # model_name will only accept alexnet, resnet, lenet 
+    # as path parameter.
 
 # model_name.value can be used to get the value.
     if model_name == ModelName.alexnet:
